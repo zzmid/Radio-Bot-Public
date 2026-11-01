@@ -1,2 +1,2 @@
-# Radio-Bot-Public
-Public radio bot for dayz
+# Dayz-Radio-Bot
+A public radio bot for dayz
