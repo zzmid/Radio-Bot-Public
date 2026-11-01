@@ -9,8 +9,22 @@ Anything posted in your radio channel gets deleted and reposted by the bot as an
 2. In the Bot tab turn on Message Content Intent, then hit Reset Token and copy it. That's your `TOKEN`
 3. In OAuth2 > URL Generator tick the `bot` scope and these permissions: View Channels, Send Messages, Embed Links and Manage Messages. Open the link it gives you and pick your server
 4. Make sure the bot can see and post in both the radio channel and the log channel, and can delete messages in the radio channel
-5. Install requirements with `pip install -r requirements.txt`
-6. Set the environment variables below and run `python radio.py`
+
+Then either run it yourself or host it on Railway.
+
+## Running it yourself
+
+1. Install requirements with `pip install -r requirements.txt`
+2. Set the environment variables below and run `python radio.py`
+
+## Hosting on Railway
+
+1. Fork this repo to your own GitHub
+2. On https://railway.com click New Project, pick GitHub repo and choose your fork
+3. Pick Add variables instead of Deploy Now, then add the environment variables below in the Variables tab
+4. Hit Deploy at the top. Once it's up the Deploy Logs should say `Logged in as` with your bot's name
+
+You don't need to set a start command, the Procfile already tells Railway to run radio.py. You don't need a domain or port either since it's just a bot.
 
 ## Environment variables
 
